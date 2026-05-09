@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>{{SUBJECT}}</title>
+<style>
+  @media only screen and (max-width: 640px) {
+    .container { width: 100% !important; padding: 32px 16px !important; }
+    .hook-quote { font-size: 21px !important; }
+    .body-text { font-size: 16px !important; }
+  }
+  @media (prefers-color-scheme: dark) {
+    .page-bg { background: #1A1814 !important; }
+    .ink-text { color: #F5F1E8 !important; }
+    .muted-text { color: #A89F8E !important; }
+    .footer-rule { border-top-color: #3D362B !important; }
+  }
+</style>
+</head>
+<body class="page-bg" style="margin:0;padding:0;background:#FAF7F0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#FAF7F0;" class="page-bg">
+  <tr><td align="center" style="padding:48px 16px;">
+    <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;">
+      <tr><td class="muted-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:13px;letter-spacing:0.08em;color:#6B6256;text-transform:uppercase;padding-bottom:32px;">{{MASTHEAD}}</td></tr>
+      <tr><td class="hook-quote ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:24px;line-height:1.45;color:#1A1A1A;font-style:italic;padding-bottom:24px;"><span style="font-size:60px;color:{{DAY_COLOR}};line-height:0.2;vertical-align:-0.4em;margin-right:4px;">&ldquo;</span>{{QUOTE_1}}</td></tr>
+      <tr><td style="padding-bottom:32px;"><hr style="border:0;border-top:2px solid {{DAY_COLOR}};width:48px;margin:0;" /></td></tr>
+      <tr><td class="body-text ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:17px;line-height:1.7;color:#1A1A1A;padding-bottom:40px;">{{OPENER_FRAMING}}</td></tr>
+      <tr><td class="muted-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:13px;letter-spacing:0.08em;color:#6B6256;text-transform:uppercase;padding-bottom:16px;">The method</td></tr>
+      <tr><td class="ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:18px;line-height:1.5;color:#1A1A1A;font-style:italic;padding-bottom:16px;">&ldquo;{{QUOTE_2}}&rdquo;</td></tr>
+      <tr><td class="body-text ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:17px;line-height:1.7;color:#1A1A1A;padding-bottom:40px;">{{METHOD_FRAMING}}</td></tr>
+      <tr><td class="muted-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:13px;letter-spacing:0.08em;color:#6B6256;text-transform:uppercase;padding-bottom:16px;">The mindset</td></tr>
+      <tr><td class="ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:18px;line-height:1.5;color:#1A1A1A;font-style:italic;padding-bottom:16px;">&ldquo;{{QUOTE_3}}&rdquo;</td></tr>
+      <tr><td class="body-text ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:17px;line-height:1.7;color:#1A1A1A;padding-bottom:40px;">{{MINDSET_FRAMING}}</td></tr>
+      <tr><td class="muted-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:13px;letter-spacing:0.08em;color:#6B6256;text-transform:uppercase;padding-bottom:16px;">Today's call</td></tr>
+      <tr><td class="body-text ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:17px;line-height:1.7;color:#1A1A1A;padding-bottom:24px;">{{ACTION_CALL}}</td></tr>
+      <tr><td class="body-text ink-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:17px;line-height:1.7;color:#1A1A1A;padding-bottom:48px;">{{CLOSING_PUNCH}}</td></tr>
+      <tr><td class="footer-rule" style="padding-bottom:24px;border-top:1px solid #D5CFC0;"></td></tr>
+      <tr><td class="muted-text" style="font-family:Charter,'Iowan Old Style',Georgia,serif;font-size:13px;line-height:1.7;color:#6B6256;font-style:italic;">Sources &middot; {{SOURCE_TITLES}}<br>Archive &middot; iCloud Drive &#9656; Motivation &#9656; {{FILENAME}}</td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>

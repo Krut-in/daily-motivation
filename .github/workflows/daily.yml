@@ -1,0 +1,47 @@
+name: Daily Motivation Email
+
+on:
+  schedule:
+    # 8:05 AM EDT = 12:05 UTC (March-November, daylight time)
+    # 8:05 AM EST = 13:05 UTC (November-March, standard time)
+    # Edit this line twice a year when DST flips, OR keep one and accept the 1-hour drift.
+    - cron: '5 12 * * *'
+  workflow_dispatch:  # manual trigger for testing
+
+permissions:
+  contents: write  # to commit archive markdown back to the repo
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate and send daily email
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python daily_motivation.py
+
+      - name: Commit archive back to repo
+        run: |
+          git config user.name "Daily Motivation Bot"
+          git config user.email "actions@github.com"
+          git add archive/
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive: daily email for $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No new archive file to commit."
+          fi
