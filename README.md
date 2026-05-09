@@ -2,44 +2,44 @@
 
 A cloud-scheduled daily motivational newsletter. Runs entirely on GitHub Actions, sends one themed email per day to krutin31@gmail.com at 8:05 AM EDT, archives the markdown back to this repo.
 
+**Zero LLM in the cron path.** Email content is pre-generated in 30-day batches by Claude Code (using your Max subscription) and read from `data/queue.json` at send time.
+
 ## Architecture
 
 ```
-GitHub Actions cron (8:05 AM EDT)
+GitHub Actions cron (8:05 AM EDT, daily)
          |
          v
   Python script (daily_motivation.py)
          |
-   +-----+------+
-   |            |
-   v            v
-Claude API   Gmail SMTP
-(opus-4-7)   (smtp.gmail.com:587)
-   |            |
-   v            v
- Framing      Email -> krutin31@gmail.com
-   |
-   v
-archive/YYYY-MM-DD-day-theme.md
-   |
-   v
- git commit + push back to this repo
+   reads data/queue.json[today_iso]
+         |
+         v
+  renders templates/letter.html or card.html
+         |
+         v
+  Gmail SMTP -> krutin31@gmail.com
+         |
+         v
+  archive/YYYY-MM-DD-day-theme.md  -> git commit + push
 ```
 
-No Mac dependency. Works regardless of laptop state.
+No Mac dependency. No Anthropic API key. Works regardless of laptop state.
 
 ## Repo layout
 
 ```
 .
 ├── .github/workflows/daily.yml    # cron + setup + run + commit-archive
-├── data/sources.json              # 251 motivation transcripts (pre-extracted from NotebookLM)
+├── data/
+│   ├── queue.json                 # 30 days of pre-generated emails (refresh monthly)
+│   └── sources.json               # 251 motivation transcripts (used for refreshing queue)
 ├── templates/
 │   ├── letter.html                # Mon-Fri design (warm cream + serif)
 │   └── card.html                  # Sat-Sun design (white card + system sans)
 ├── archive/                       # daily markdown files, committed by the workflow
-├── daily_motivation.py            # main pipeline
-├── requirements.txt
+├── daily_motivation.py            # main pipeline (stdlib only)
+├── requirements.txt               # empty (stdlib only)
 ├── .gitignore
 └── README.md
 ```
@@ -62,7 +62,25 @@ No Mac dependency. Works regardless of laptop state.
 |---|---|
 | `GMAIL_USER` | krutin31@gmail.com |
 | `GMAIL_APP_PASSWORD` | Gmail app password (16 chars, no spaces) |
-| `ANTHROPIC_API_KEY` | API key from console.anthropic.com (starts with `sk-ant-api03-`) |
+
+That's it. No `ANTHROPIC_API_KEY` because no LLM runs in the cron path.
+
+## Refreshing the queue
+
+The current queue covers May 9 to June 7, 2026 (30 days). When it's getting close to running out, refresh by opening any Claude Code chat and saying:
+
+> "Refresh the motivation queue."
+
+Claude Code will:
+1. Read `data/sources.json` (251 motivation transcripts from your NotebookLM)
+2. Pick themed sources for the next 30 days
+3. Generate fresh framing for each day
+4. Write a new `data/queue.json`
+5. Commit and push to this repo
+
+This uses your Claude Max subscription, so there's no marginal cost.
+
+If you forget and the queue runs out, the workflow exits with a clear message ("No queue entry for {date}. Refresh by asking Claude Code...") and no email is sent that day. No silent failures.
 
 ## Daylight saving
 
@@ -71,56 +89,27 @@ The cron line in `.github/workflows/daily.yml` is set to `5 12 * * *`, which is 
 ## Local testing
 
 ```bash
-pip install -r requirements.txt
 export GMAIL_USER=krutin31@gmail.com
 export GMAIL_APP_PASSWORD=...
-export ANTHROPIC_API_KEY=sk-ant-api03-...
 
 # Compose without sending or archiving
-python daily_motivation.py --dry-run
+python3 daily_motivation.py --dry-run
 
-# Compose, send, and archive
-python daily_motivation.py
-```
+# Test a specific date in the queue
+python3 daily_motivation.py --dry-run --force-date 2026-05-14
 
-## Refreshing the source corpus
-
-`data/sources.json` is a static export of 251 motivation transcripts from your Weekly Motivation NotebookLM notebook. New sources you add to NotebookLM won't appear in emails until you re-export.
-
-To refresh (run locally on your Mac with `nlm` CLI authenticated):
-
-```bash
-# from the repo root
-python3 -c "
-import json, subprocess
-from concurrent.futures import ThreadPoolExecutor, as_completed
-
-NOTEBOOK_ID = '39807d62-2930-4dca-9460-27fcb493ba31'
-ids = json.loads(subprocess.check_output(['nlm', 'list', 'sources', NOTEBOOK_ID, '--json']))
-
-def fetch(s):
-    r = subprocess.run(['nlm', 'source', 'content', s['id']], capture_output=True, text=True, timeout=30)
-    return {'id': s['id'], 'title': s.get('title', ''), 'content': r.stdout.strip() if r.returncode == 0 else ''}
-
-with ThreadPoolExecutor(max_workers=10) as ex:
-    futures = {ex.submit(fetch, s): s for s in ids}
-    sources = [f.result() for f in as_completed(futures)]
-
-with open('data/sources.json', 'w') as f:
-    json.dump({'notebook_id': NOTEBOOK_ID, 'sources': sources}, f, indent=2)
-
-print(f'Refreshed {len(sources)} sources.')
-"
-
-git add data/sources.json
-git commit -m "Refresh source corpus"
-git push
+# Compose, send, and archive (uses today's date)
+python3 daily_motivation.py
 ```
 
 ## Cost
 
-Per email: roughly $0.06 in Claude API tokens (Opus 4.7, ~5K input + 1.5K output). Monthly: about $1.85 at 30 emails. GitHub Actions free tier (2000 min/month for private repos) is more than enough.
+GitHub Actions free tier (2,000 minutes/month for private repos) covers ~120,000 daily runs at 30 sec each. You'll use ~15 min/month. Zero ongoing API cost since no LLM in the cron path.
+
+Refresh batches use Claude Max subscription, so $0 marginal cost.
 
 ## Pause or stop
 
 In the GitHub repo: Settings > Actions > General > "Disable Actions" pauses everything immediately. Or disable just this workflow in the Actions tab.
+
+To stop entirely: archive the repo or delete the workflow file.

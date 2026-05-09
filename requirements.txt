@@ -1,2 +1,2 @@
-anthropic>=0.40.0
-pydantic>=2.0
+# Daily Motivation uses Python stdlib only (smtplib, ssl, json, etc.).
+# No third-party dependencies required.
