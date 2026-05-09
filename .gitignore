@@ -10,3 +10,8 @@ __pycache__/
 .pytest_cache/
 venv/
 .venv/
+
+# Source corpus is kept local only.
+# Contains transcripts of third-party YouTube videos that should not be republished.
+# Kept on local Mac at data/sources.json for queue refresh.
+data/sources.json

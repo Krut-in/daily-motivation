@@ -20,7 +20,7 @@ The architectural move worth noting: **no LLM runs in the cron path.** Generatio
 
 **Two HTML templates, dark-mode native.** Both templates use table-based layout for cross-client compatibility (Outlook in particular), with inline CSS and `prefers-color-scheme: dark` media queries layered on top for automatic dark mode on iOS Mail and Apple Mail.
 
-**Pre-generated content queue.** A single `data/queue.json` file holds 30 days of composed emails. Each entry carries a subject line and three quotes from a 251-source motivational corpus, plus original framing written in a specific voice with strict style constraints (no em dashes, no parallel-clause filler, second-person present tense).
+**Pre-generated content queue.** A single `data/queue.json` file holds 30 days of composed emails. Each entry carries a subject line and three short quotes (used as fair-use excerpts), plus original framing written in a specific voice with strict style constraints (no em dashes, no parallel-clause filler, second-person present tense). The full source corpus stays local and is not republished here.
 
 **Self-archiving.** After each send, the workflow commits the daily markdown back to the repo under `archive/`. Over time the repo becomes a searchable history of every email sent.
 
