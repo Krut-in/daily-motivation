@@ -2,10 +2,25 @@ name: Daily Motivation Email
 
 on:
   schedule:
-    # 8:05 AM EDT = 12:05 UTC (March-November, daylight time)
-    # 8:05 AM EST = 13:05 UTC (November-March, standard time)
-    # Edit this line twice a year when DST flips, OR keep one and accept the 1-hour drift.
-    - cron: '5 12 * * *'
+    # GitHub Actions cron is delayed by 80-200+ minutes on free runners.
+    # We fire 13 times every 15 min from 9:30 to 12:30 UTC. The Python script
+    # exits silently if (a) it is before 7:30 AM ET, or (b) today's email is
+    # already in the archive. So only the first run that meets both conditions
+    # actually sends. DST is handled inside the Python script via zoneinfo,
+    # so this list never needs editing.
+    - cron: '30 9 * * *'
+    - cron: '45 9 * * *'
+    - cron: '0 10 * * *'
+    - cron: '15 10 * * *'
+    - cron: '30 10 * * *'
+    - cron: '45 10 * * *'
+    - cron: '0 11 * * *'
+    - cron: '15 11 * * *'
+    - cron: '30 11 * * *'
+    - cron: '45 11 * * *'
+    - cron: '0 12 * * *'
+    - cron: '15 12 * * *'
+    - cron: '30 12 * * *'
   workflow_dispatch:  # manual trigger for testing
 
 permissions:

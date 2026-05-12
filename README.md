@@ -45,7 +45,7 @@ Built with Python's standard library and GitHub Actions for the daily cron. The 
 3. Add two GitHub Secrets: `GMAIL_USER` and `GMAIL_APP_PASSWORD`.
 4. Trigger once to verify: `gh workflow run daily.yml`.
 
-Cron is `5 12 * * *` UTC (8:05 AM EDT). Flip to `5 13 * * *` for EST in winter.
+The workflow fires every 15 minutes from 9:30 to 12:30 UTC. The Python script exits silently if it is before 7:30 AM ET or if today's email is already in the archive, so only the first run that meets both conditions actually sends. This absorbs GitHub Actions cron drift and handles DST without seasonal edits.
 
 ## Roadmap
 
