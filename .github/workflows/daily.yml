@@ -2,12 +2,25 @@ name: Daily Motivation Email
 
 on:
   schedule:
-    # GitHub Actions cron is delayed by 80-200+ minutes on free runners.
-    # We fire 13 times every 15 min from 9:30 to 12:30 UTC. The Python script
-    # exits silently if (a) it is before 7:30 AM ET, or (b) today's email is
-    # already in the archive. So only the first run that meets both conditions
-    # actually sends. DST is handled inside the Python script via zoneinfo,
-    # so this list never needs editing.
+    # GitHub Actions free-runner cron is delayed 80-200+ minutes (observed
+    # 82, 148, 195 in the recent week). We fan out 21 triggers every 15 min
+    # from 7:30 to 12:30 UTC, which covers delays from ~0 up to ~240 min
+    # while still landing in the 7:30-8:30 AM ET window in nearly all cases.
+    # Two guards in daily_motivation.py do the actual filtering:
+    #   1. Window guard: exit silently if current ET time < 7:30 AM.
+    #   2. Dedup guard: exit silently if today's archive file already exists.
+    # The concurrency block below serializes runs so two near-simultaneous
+    # triggers cannot both pass the dedup guard and double-send.
+    # DST is handled inside the Python script via zoneinfo, so this list
+    # never needs seasonal edits.
+    - cron: '30 7 * * *'
+    - cron: '45 7 * * *'
+    - cron: '0 8 * * *'
+    - cron: '15 8 * * *'
+    - cron: '30 8 * * *'
+    - cron: '45 8 * * *'
+    - cron: '0 9 * * *'
+    - cron: '15 9 * * *'
     - cron: '30 9 * * *'
     - cron: '45 9 * * *'
     - cron: '0 10 * * *'
@@ -22,6 +35,10 @@ on:
     - cron: '15 12 * * *'
     - cron: '30 12 * * *'
   workflow_dispatch:  # manual trigger for testing
+
+concurrency:
+  group: daily-motivation
+  cancel-in-progress: false  # let the in-flight run finish; queue the next one
 
 permissions:
   contents: write  # to commit archive markdown back to the repo
@@ -50,7 +67,7 @@ jobs:
           git config user.email "actions@github.com"
           git add archive/
           if ! git diff --cached --quiet; then
-            git commit -m "Archive: daily email for $(date -u +%Y-%m-%d)"
+            git commit -m "Archive: daily email for $(TZ='America/New_York' date +%Y-%m-%d)"
             git push
           else
             echo "No new archive file to commit."
