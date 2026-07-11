@@ -1,0 +1,29 @@
+name: Daily Motivation Delivery Audit
+
+on:
+  schedule:
+    - cron: '17 14 * * *'
+      timezone: America/New_York
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Verify today's delivery
+        run: python daily_motivation.py --verify-delivery

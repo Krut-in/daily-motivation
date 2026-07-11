@@ -1,0 +1,1472 @@
+{
+  "version": 1,
+  "practice_epoch": "2026-05-08",
+  "source_snapshots": [
+    "4dd1641:data/queue.json",
+    "2635457:data/queue.json"
+  ],
+  "excluded_origin_dates": [
+    "2026-05-14",
+    "2026-06-06",
+    "2026-07-03",
+    "2026-07-06"
+  ],
+  "records": [
+    {
+      "id": "2026-05-09",
+      "origin_date": "2026-05-09",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "Built different is built quietly",
+        "quote": "Do something that sucks every single day of your life. That's how you grow.",
+        "framing": "Saturday is when most people lower the bar because no one's grading. The whole week was a performance for someone external. Today no one's watching, so today reveals who you actually are when there's no scoreboard.",
+        "source_title": "BECOME A SAVAGE",
+        "closing_punch": "Identity is what survives the absence of an audience."
+      },
+      "method": {
+        "quote": "The real grind is in the dark when nobody sees you.",
+        "framing": "Identity isn't built in front of cameras. It's built in the boring hour you don't post about, or the workout no one would have known you skipped. The Saturday rep no one applauds becomes the bar you cannot fall below on the worst Monday.",
+        "source_title": "SAVAGE MENTALITY"
+      },
+      "mindset": {
+        "quote": "If no one thinks you're crazy, you're not yet operating to the outer limits of your potential.",
+        "framing": "The version of you that scares the comfortable people around you is usually the right one. If your work makes someone uncomfortable enough to call you 'too intense,' that's a signal. Don't soften it. Refine it.",
+        "source_title": "OBSESSION"
+      },
+      "action": {
+        "action_call": "Pick one thing today that you'd never tell anyone about. Maybe a workout you'd skip if no one would notice, or a piece of work you've been deferring with no real reason. Do it before the day softens into noise."
+      }
+    },
+    {
+      "id": "2026-05-10",
+      "origin_date": "2026-05-10",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Tough times don't stay",
+        "quote": "Tough times have not come to stay. They have come to pass.",
+        "framing": "Sunday is the day the week's accumulated weight catches up. Whatever happened Mon-Fri left a residue on you, and the temptation now is to read that residue as a verdict. It isn't. It's weather.",
+        "source_title": "I WILL NEVER QUIT",
+        "closing_punch": "Tough people last longer than tough times."
+      },
+      "method": {
+        "quote": "If you do what is easy, your life will be hard. If you do what is hard, your life will be easy.",
+        "framing": "Resilience isn't about being unbreakable. It's about choosing the harder thing on the day you most want the easier. Today the easy thing is to stay in bed and wait for Monday energy. The harder thing is to run while it's raining.",
+        "source_title": "WHEN LIFE GETS TOUGH"
+      },
+      "mindset": {
+        "quote": "Adversity causes some people to break and others to break records.",
+        "framing": "The same hit that ends one person's week is the same hit that turns another person into the version they've been waiting to meet. The pressure isn't picking sides. The response is.",
+        "source_title": "YOU MUST KEEP GOING"
+      },
+      "action": {
+        "action_call": "Pick one thing this Sunday that the broken version of you would skip. Maybe a long walk in the cold, or finishing the project you abandoned Wednesday. Do it for one reason: doing the thing teaches your nervous system who's actually in charge, regardless of mood."
+      }
+    },
+    {
+      "id": "2026-05-11",
+      "origin_date": "2026-05-11",
+      "weekday": "Monday",
+      "theme": "Discipline",
+      "hook": {
+        "subject_suffix": "Discipline outlives mood",
+        "quote": "If you can only execute when you feel like executing, you will lose 100 times out of 100.",
+        "framing": "Monday is when feeling-based people fall behind. They wait for energy that won't come, blame the timing, and watch the disciplined version of themselves outpace them all week. You're not waiting on a feeling today.",
+        "source_title": "STAY DISCIPLINED",
+        "closing_punch": "Mood follows action. The reverse is fiction."
+      },
+      "method": {
+        "quote": "Excuses sound best to the person who is making them up.",
+        "framing": "Notice what excuse comes up first this morning, and write it down. Just the words. Tomorrow, when the same excuse arrives, you'll see it for what it is. A regular companion, not a true reason.",
+        "source_title": "BECOME DISCIPLINED"
+      },
+      "mindset": {
+        "quote": "Your mind will always choose the path of least resistance. Train it to choose the path of most resistance instead.",
+        "framing": "Discipline is the choice your mind makes after you've trained it to choose against itself. It feels alien at first because your default neural circuit is set to ease. Every act of friction is rewiring.",
+        "source_title": "YOU NEED TO DISCIPLINE YOURSELF"
+      },
+      "action": {
+        "action_call": "Pick the one decision today that your easier self would skip. Maybe a morning workout, or 90 focused minutes before you open email. Choose it before your mood has a chance to vote."
+      }
+    },
+    {
+      "id": "2026-05-12",
+      "origin_date": "2026-05-12",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Cut to one thing",
+        "quote": "The irony of life: shrink your options in pursuit of your dream, and the world opens them up later.",
+        "framing": "Tuesday is the day distraction starts winning. Monday's clean intentions begin to fragment under emails and other people's urgencies. Today is the day to remember which one thing matters most this week and refuse to let the noise re-prioritize you.",
+        "source_title": "IT'S TIME TO FOCUS",
+        "closing_punch": "What you focus on grows. What you ignore shrinks."
+      },
+      "method": {
+        "quote": "The best way to silence them is through activity. Through results.",
+        "framing": "Focus isn't a feeling. It's an exclusion habit. Decide right now what you will not work on this week, and let that exclusion be the moat around your one thing.",
+        "source_title": "FOCUS ON YOU"
+      },
+      "mindset": {
+        "quote": "Cut off anything that doesn't support you. Embed the long-term goal in your mind.",
+        "framing": "The hardest part of focus is grieving what you're saying no to. Every yes to your one thing is a small no to something else you also wanted. The discipline is letting that grief be the price of becoming who you said you'd be.",
+        "source_title": "YOU MUST STAY FOCUSED"
+      },
+      "action": {
+        "action_call": "Identify your single most important task today. Give it 90 minutes before lunch with everything else closed. The other things will still be there at 2 PM."
+      }
+    },
+    {
+      "id": "2026-05-13",
+      "origin_date": "2026-05-13",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Grind quietly, win loudly",
+        "quote": "Grind in silence and let your success make the noise.",
+        "framing": "Wednesday is the midpoint where most people start announcing what they're working on. Half-finished plans get posted, effort starts seeking applause. Yours doesn't, and that quiet is what compounds into actual results.",
+        "source_title": "GRIND IN SILENCE",
+        "closing_punch": "Wednesday isn't a holding pattern. It's where the week's trajectory bends."
+      },
+      "method": {
+        "quote": "If you want the easy road, it's longer and more painful than the hard road.",
+        "framing": "Today's grind is mid-week and unsexy. Nobody's giving out medals for showing up on a Wednesday. That's exactly why this is the day character compounds while the lazy version of you talks about how busy they are.",
+        "source_title": "JUST KEEP GRINDING"
+      },
+      "mindset": {
+        "quote": "The easy choice makes life hard. The hard choice makes life easy.",
+        "framing": "Every Wednesday decision is a tiny vote for who you'll be by Friday. A workout you'd skip, or a deep work block you'd shorten. Either one casts a small ballot.",
+        "source_title": "YOU MUST WORK HARDER"
+      },
+      "action": {
+        "action_call": "Pick one task today that requires real effort, not just busy effort. Run it for 60 uninterrupted minutes before noon. The rest of the day can have your usual energy."
+      }
+    },
+    {
+      "id": "2026-05-15",
+      "origin_date": "2026-05-15",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "The price either way",
+        "quote": "The price you pay for chasing the dream is far smaller than the price you'll pay if you never do.",
+        "framing": "Friday closes the work week, and the temptation is to coast. The version of you that wants to coast is the version paying the bigger price later. The harder Friday is the one you'll never regret on Sunday night.",
+        "source_title": "I'M GOING TO WIN",
+        "closing_punch": "What costs you everything once costs you nothing forever."
+      },
+      "method": {
+        "quote": "I am not phenomenally skilled. I am phenomenally willed.",
+        "framing": "Talent picks the starting line. Will picks the finish line. Today's question isn't 'am I good enough?' It's 'am I willing enough to keep going past where the talented but tired version of me would stop?' Your answer is one Friday at a time.",
+        "source_title": "IT IS NOT OVER UNTIL I WIN"
+      },
+      "mindset": {
+        "quote": "If you don't have any critics, you're probably not doing anything great.",
+        "framing": "A Friday with critics is a Friday where you're visible. Visibility means you're moving. The version of you that no one criticizes is also the version that disappears.",
+        "source_title": "BE OBSESSED WITH WINNING"
+      },
+      "action": {
+        "action_call": "Pick one thing today that the comfortable version of you would skip. Maybe one extra hour of work, or one hard conversation you've been deferring. The Friday version of you who chooses it is the Sunday version who won't have regrets."
+      }
+    },
+    {
+      "id": "2026-05-16",
+      "origin_date": "2026-05-16",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "The process is the form",
+        "quote": "It is the process of the grind that shapes you and forms you. It's not the game.",
+        "framing": "Saturday is when you stop performing for the week and become whoever you are when no one's grading. The form of who you are is the cumulative output of the process. You don't get to choose the form, only the process you actually live.",
+        "source_title": "SAVAGE MENTALITY",
+        "closing_punch": "Whoever shows up on Saturday is who you actually are."
+      },
+      "method": {
+        "quote": "What makes a lion the king of the jungle is its mentality.",
+        "framing": "A lion isn't born a lion. It earns the title through the hunt, not the kill. Every Saturday you commit to the unglamorous parts of your craft is a day the lion in you stops being theoretical.",
+        "source_title": "BECOME A BEAST"
+      },
+      "mindset": {
+        "quote": "Commitment is staying true to what you said you were true to long after the mood that you set it in has left.",
+        "framing": "Identity isn't a feeling on a Monday morning when you set the goal. It's the action you take on a Saturday afternoon when no one would know if you'd stopped. The mood is gone by then. The commitment is what's left.",
+        "source_title": "TRUE BEAST MENTALITY"
+      },
+      "action": {
+        "action_call": "Pick one thing today that connects to the identity you said you wanted. Maybe a workout no one would notice you skipped, or a page of writing you don't strictly have to do. Do it because it's who you said you'd become."
+      }
+    },
+    {
+      "id": "2026-05-17",
+      "origin_date": "2026-05-17",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "The mark the break leaves",
+        "quote": "It is staying with the breaking that produces the blessing.",
+        "framing": "Sunday is when the week's accumulated weight asks you to quit. The week broke you in small ways you barely noticed at the time. Today's only job is to stay with the breaking long enough for the mark it leaves to be worth carrying.",
+        "source_title": "WHEN LIFE BREAKS YOU",
+        "closing_punch": "Tough times never last. Tough people do."
+      },
+      "method": {
+        "quote": "The moment of extreme adversity is the best moment for audacity.",
+        "framing": "When everything in your week says 'be smaller,' that's exactly when to be larger. The dose-response curve on courage inverts under pressure. The audacious move you delayed is the one Sunday is asking you to take.",
+        "source_title": "I MUST KEEP GOING"
+      },
+      "mindset": {
+        "quote": "This moment can become your biggest turning point or the moment you lose everything. The choice is yours.",
+        "framing": "The break itself is neutral. It's just data about pressure. What you do in the 48 hours after the break is the entire story of who you become next.",
+        "source_title": "WHEN LIFE GETS HARD"
+      },
+      "action": {
+        "action_call": "Pick the one thing this Sunday that the broken version of you would dismiss as too much. Maybe a long conversation, or a project you'd been avoiding all week. Begin it small. Just begin."
+      }
+    },
+    {
+      "id": "2026-05-18",
+      "origin_date": "2026-05-18",
+      "weekday": "Monday",
+      "theme": "Discipline",
+      "hook": {
+        "subject_suffix": "Nothing changes if nothing changes",
+        "quote": "If nothing changes, nothing changes.",
+        "framing": "Monday is the day every plan you made on Sunday meets actual gravity. The version of you that wrote down the goals last night is at war with the version of you who has to act on them this morning. The Monday version wins by default unless you intervene.",
+        "source_title": "SELF CONTROL",
+        "closing_punch": "What you do daily becomes who you are eventually."
+      },
+      "method": {
+        "quote": "Your ego is digging a grave. A grave of comfort you'll voluntarily crawl into.",
+        "framing": "Comfort feels like rest. It's actually slow surrender. Every time you postpone a small discipline, you're not 'taking it easy,' you're voting against the version of you that wanted something different last week.",
+        "source_title": "SELF DISCIPLINE"
+      },
+      "mindset": {
+        "quote": "You have to learn to do when you don't want to do.",
+        "framing": "Discipline isn't about willpower. It's about removing the negotiation between you and the action. The disciplined person doesn't argue with themselves about whether to start. They just start, and the body follows.",
+        "source_title": "YOU HAVE TO DISCIPLINE YOUR MIND"
+      },
+      "action": {
+        "action_call": "Pick the one Monday discipline you'd be tempted to skip. Maybe a cold shower, or 90 focused minutes before email. Run it before any negotiation begins."
+      }
+    },
+    {
+      "id": "2026-05-19",
+      "origin_date": "2026-05-19",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Garden, not forest",
+        "quote": "You got to pass up on good to get to great.",
+        "framing": "Tuesday is when 'good' opportunities start crowding out the 'great' one. Every meeting that wasn't on Sunday's plan and every helpful favor for someone else looks innocent on its own. Together they crowd out the work that's actually yours.",
+        "source_title": "YOU NEED TO FOCUS YOUR MIND",
+        "closing_punch": "A garden is just a forest someone said no to."
+      },
+      "method": {
+        "quote": "Get rid of the debate. Make the binary code decision: yes or no.",
+        "framing": "Most lost focus is just unmade decisions sitting in your head. Should I do this? Should I check that? Each unmade decision drains the battery. Convert each one into a yes or no, and the battery refills.",
+        "source_title": "FOCUS AND EXECUTE"
+      },
+      "mindset": {
+        "quote": "A thoroughbred wears blinders so it can stay in its lane and see only the finish line.",
+        "framing": "Your peripheral vision is the enemy of focus. You don't need to see what others are doing. You only need to see your finish line and what to do in the next 90 minutes to move toward it.",
+        "source_title": "YOU MUST FOCUS"
+      },
+      "action": {
+        "action_call": "Identify your single most important task today, and put 90 uninterrupted minutes on it before lunch. The rest of the day belongs to whoever wants it."
+      }
+    },
+    {
+      "id": "2026-05-20",
+      "origin_date": "2026-05-20",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Uphill hopes vs downhill habits",
+        "quote": "We have uphill hopes and downhill habits. Downhill isn't getting us where we want to go.",
+        "framing": "Wednesday is when most people's downhill habits catch up with their uphill hopes. The dream is still there in your head, but the actual hours of your day are quietly running the wrong direction. Today is the day to pick one habit and walk it back uphill.",
+        "source_title": "GET UP AND GRIND",
+        "closing_punch": "Habits make you. You don't make habits."
+      },
+      "method": {
+        "quote": "Success is not a loud event. It's the work you do in the dark.",
+        "framing": "The grind that compounds isn't the visible heroic kind. It's the invisible kind. Maybe 30 minutes of focused work no one sees, or one decision to skip a conversation that wasn't moving anything. The Wednesday rep ladders into Friday's results.",
+        "source_title": "WORK HARD IN SILENCE"
+      },
+      "mindset": {
+        "quote": "You don't get out of life what you want. You get out of life who you are.",
+        "framing": "Today's habits aren't earning you tomorrow's outcomes. They're building tomorrow's identity, which earns the outcomes. Get specific about who you're becoming on this Wednesday, because that's what you'll be on the next one.",
+        "source_title": "DO NOT STOP GRINDING"
+      },
+      "action": {
+        "action_call": "Pick one habit today that's downhill and walk it back uphill. Maybe one workout you've been deferring, or one focused work block on the problem you've been avoiding. Do it before noon."
+      }
+    },
+    {
+      "id": "2026-05-21",
+      "origin_date": "2026-05-21",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "The other voice",
+        "quote": "Your inner conversation will be loud, telling you it's over. You've got to find the other voice.",
+        "framing": "Thursday is when the inner critic gets loud. The week's wins start feeling small while the week's losses bloat. Somewhere in your head a voice says you're not the version of you that you wanted to be. That voice is one of two. Today is about which one you let speak louder.",
+        "source_title": "I CAN MAKE IT",
+        "closing_punch": "Belief is a sentence you choose to repeat."
+      },
+      "method": {
+        "quote": "If you can find a why for living, you can endure almost any how.",
+        "framing": "Belief without a 'why' collapses under any sustained pressure. Today, write down the actual reason you're doing this thing. Not the polished version. The raw one. That's the voice that talks back to the critic.",
+        "source_title": "I CAN DO THIS"
+      },
+      "mindset": {
+        "quote": "Some people don't fall because they lack ability. They fall because they lack the heart to go through adversity.",
+        "framing": "Heart isn't a feeling on Thursday. It's the practiced choice to not negotiate with the inner critic. You hear the critic and you keep going anyway. The negotiation is what kills the dream, not the critic itself.",
+        "source_title": "I CAN DO IT"
+      },
+      "action": {
+        "action_call": "Write down today's most active inner-critic line: the exact sentence it keeps repeating. Then write the response, one sentence of evidence that contradicts it. Read both at noon."
+      }
+    },
+    {
+      "id": "2026-05-22",
+      "origin_date": "2026-05-22",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "The lonely road",
+        "quote": "Success is a very lonely road. Few people will go through the pain to get there.",
+        "framing": "Friday is when the loneliness of the work shows up. Most people you know are wrapping up to disconnect for the weekend. You're the one still calibrating. That's not a flaw. It's the part of the road most people refuse to walk.",
+        "source_title": "I WILL WIN",
+        "closing_punch": "Lonely roads end in places crowded ones can't reach."
+      },
+      "method": {
+        "quote": "I will not be denied. This will not be it for my life.",
+        "framing": "Outworking everyone isn't about hours. It's about declaring something publicly to yourself: this is not the version I'm settling for. Make that declaration today, then take one specific action that proves you meant it.",
+        "source_title": "IT'S NOT OVER UNTIL I WIN"
+      },
+      "mindset": {
+        "quote": "People who don't have dreams for themselves tend to be dream killers.",
+        "framing": "Friday will surface the dream killers. They love you and they mean well, but they can't see past their own ceiling, so they ask you to lower yours. Don't argue. Just keep working. Your output will eventually answer the question for both of you.",
+        "source_title": "PROVE THEM WRONG"
+      },
+      "action": {
+        "action_call": "Pick one task today where you're the only one who'd notice if you dropped the standard. Hold it at the higher standard anyway. The Friday version of you who doesn't compromise is the one who deserves the weekend."
+      }
+    },
+    {
+      "id": "2026-05-23",
+      "origin_date": "2026-05-23",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "Beast until it's uncomfortable",
+        "quote": "Some of you are a beast until it's uncomfortable.",
+        "framing": "Saturday's identity test is comfort. The week gave you reasons to perform. The weekend strips them all away. The version of you that shows up only when conditions are perfect isn't actually the version you've been building. Today reveals which one is real.",
+        "source_title": "BECOME AN ABSOLUTE SAVAGE",
+        "closing_punch": "The version of you that shows up at full effort on Saturday is the version that becomes you."
+      },
+      "method": {
+        "quote": "Get over your feelings. Feelings go up and down.",
+        "framing": "The mistake is treating your feelings as data about whether to act. They aren't. They're weather. The disciplined version of you acts according to the schedule, and the feelings come along once the action begins.",
+        "source_title": "BECOME A BEAST"
+      },
+      "mindset": {
+        "quote": "Don't put forth half effort unless you're okay with half results.",
+        "framing": "Saturday is when you decide whether the identity you wanted is the one you're willing to pay for. Half effort earns half identity. The Saturday rep at full effort costs more, but it's what you actually wanted to become.",
+        "source_title": "BECOME A SAVAGE"
+      },
+      "action": {
+        "action_call": "Pick one Saturday task where you'd usually give 70% because it's the weekend. Give it the full 110% you'd give on Tuesday morning. Notice how different you feel about it by Sunday."
+      }
+    },
+    {
+      "id": "2026-05-24",
+      "origin_date": "2026-05-24",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Pressure has purpose",
+        "quote": "The pressure in your life isn't crushing you. It's pushing what's on the inside of you out.",
+        "framing": "Sunday is when last week's pressure either becomes wisdom or becomes weight. The same pressure does both, depending on whether you stay with it long enough to extract the lesson. Today is for the extraction.",
+        "source_title": "WHEN LIFE SHATTERS YOU",
+        "closing_punch": "Pressure that pushes the inside out is the only kind worth staying with."
+      },
+      "method": {
+        "quote": "Quitting guarantees the failure.",
+        "framing": "There's a quiet kind of quitting that doesn't look like quitting. It's the slow withdrawal of effort, dressed up as 'this wasn't really for me anyway.' Today, name the thing you've been quietly quitting, and decide whether to actually quit it or actually try.",
+        "source_title": "KEEP GOING"
+      },
+      "mindset": {
+        "quote": "Your character is put to the test when your back is against the wall.",
+        "framing": "Backed against the wall is just data. It tells you what you're made of, and it tells you what you didn't know you could do. Sunday is the day to face the wall calmly and discover both.",
+        "source_title": "DON'T QUIT"
+      },
+      "action": {
+        "action_call": "Pick the one thing this Sunday that's been quietly grinding on you. Maybe a decision you've been deferring, or a project you've been letting drift. Pick one and address it before bed."
+      }
+    },
+    {
+      "id": "2026-05-25",
+      "origin_date": "2026-05-25",
+      "weekday": "Monday",
+      "theme": "Discipline",
+      "hook": {
+        "subject_suffix": "Stop giving yourself a pass",
+        "quote": "You give yourself a pass. You know you should be further in life, but you keep letting you slide.",
+        "framing": "Monday is when the most generous person in your life shows up to give you a free pass: yourself. You're more lenient with you than anyone else has ever been. Today is the day to be the strict version of yourself you'd never tolerate from anyone else.",
+        "source_title": "STAY DISCIPLINED",
+        "closing_punch": "Discipline is just self-respect with a schedule."
+      },
+      "method": {
+        "quote": "Discipline is the ability to give yourself a command, and then follow it.",
+        "framing": "Make the command precise: not 'work hard today' but 'work on X for 90 minutes starting at 9.' Vague commands get vague follow-through. Specific commands get executed because there's nothing left to negotiate.",
+        "source_title": "MASTER YOUR MIND"
+      },
+      "mindset": {
+        "quote": "You can't just have energy when you got energy.",
+        "framing": "Energy is a result of discipline, not a prerequisite for it. The disciplined person creates energy by acting. The undisciplined person waits for energy that won't arrive without action. The order matters more than the effort.",
+        "source_title": "DISCIPLINE YOURSELF"
+      },
+      "action": {
+        "action_call": "Pick one specific command for today, with a clear action and a start time. Write it down. Execute it. Don't negotiate."
+      }
+    },
+    {
+      "id": "2026-05-26",
+      "origin_date": "2026-05-26",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Block out the world",
+        "quote": "I want to see what my life would look like if I didn't count the cost.",
+        "framing": "Tuesday is when the cost-counting begins. Should I really do this? Is this worth the time? Each cost-count is a tiny vote for not trying. Today is the day to stop counting and just go.",
+        "source_title": "FOCUS ON YOU",
+        "closing_punch": "What you give your attention to is the only thing that's actually yours."
+      },
+      "method": {
+        "quote": "Only those who risk going too far can find out how far one can go.",
+        "framing": "Focus is partly a permission to push past where reasonable people stop. Reasonable is the enemy. The Tuesday version of you that's reasonable is the one who'll never know what the unreasonable version could have built.",
+        "source_title": "YOU MUST FOCUS ON YOU"
+      },
+      "mindset": {
+        "quote": "The biggest enemy you have to deal with is yourself.",
+        "framing": "External distractions are the smaller enemy. The bigger one is the part of you that finds them. Notice today how often you reach for distraction the moment a hard task gets uncomfortable. That reach is the actual battle.",
+        "source_title": "STAY FOCUSED"
+      },
+      "action": {
+        "action_call": "Block 90 minutes of focused work this morning. Phone in another room. No tabs that aren't the work. When the discomfort hits and you reach for a distraction, just notice the reach and return."
+      }
+    },
+    {
+      "id": "2026-05-27",
+      "origin_date": "2026-05-27",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Take the stairs",
+        "quote": "Ain't no elevator to the top. You got to take the stairs.",
+        "framing": "Wednesday is the day the elevator-shaped fantasies dissolve. The plan you wrote Sunday assumed momentum that hasn't materialized, and now you're three days into the week with the bigger half ahead. The honest move is the stairs.",
+        "source_title": "WORK ETHIC",
+        "closing_punch": "Hunger you understand will outlast every motivation you can borrow."
+      },
+      "method": {
+        "quote": "If you neglect to program yourself, life will program you.",
+        "framing": "The grind is just programming. Either you set the script for today, or external pressures set it for you. Today, write down the three things that must happen by 5 PM, and run them in order without checking anything else first.",
+        "source_title": "GRIND EVERY SINGLE DAY"
+      },
+      "mindset": {
+        "quote": "The lion isn't running to be rewarded. The lion is running to eat.",
+        "framing": "External rewards run out. Internal hunger doesn't. The Wednesday grind only sustains itself if you've identified the actual hunger underneath, and you let that hunger do the running.",
+        "source_title": "KEEP GRINDING"
+      },
+      "action": {
+        "action_call": "Identify the three things on your list with the biggest payoff today. Run them in priority order. Let everything else wait until they're done."
+      }
+    },
+    {
+      "id": "2026-05-28",
+      "origin_date": "2026-05-28",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "Until you're done, not until you're tired",
+        "quote": "You don't stop when you're tired. You stop when you're done.",
+        "framing": "Thursday is when the tired version of you starts asking permission to lower the bar. The reasonable case for stopping looks airtight, and your body and mind both agree. The done version of you doesn't show up until later, but only if you keep going.",
+        "source_title": "I CAN DO IT",
+        "closing_punch": "Belief is built by the actions belief should have caused."
+      },
+      "method": {
+        "quote": "If you really want it like you say you want it, you will find a way.",
+        "framing": "Wanting it is cheap. Showing up tired is the proof that you wanted it. Today's question isn't whether you have energy. It's whether your wanting is louder than your tiredness.",
+        "source_title": "BELIEVE YOU CAN"
+      },
+      "mindset": {
+        "quote": "The only way out is to step forward and face your fears.",
+        "framing": "Belief isn't a feeling that arrives. It's an action you take in spite of the lack of feeling. You step forward not because you're sure, but because the only way to find out whether you're capable is to act as if you are.",
+        "source_title": "I CAN DO IT (Powerful)"
+      },
+      "action": {
+        "action_call": "Pick the one task today that the tired version of you would skip. Do it before you're allowed to call it a day. Not for the result. For the proof."
+      }
+    },
+    {
+      "id": "2026-05-29",
+      "origin_date": "2026-05-29",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "Stop negotiating with yourself",
+        "quote": "You can't be executing and negotiating simultaneously.",
+        "framing": "Friday is when the inner negotiator gets loud. The voice asks 'maybe half today?' or suggests 'maybe Monday is fine.' Each negotiation steals from the work. Today, refuse the conversation and just execute.",
+        "source_title": "BE OBSESSED WITH WINNING",
+        "closing_punch": "What you perceive about you is the only verdict that compounds."
+      },
+      "method": {
+        "quote": "Every great, successful person was ridiculed before they were revered.",
+        "framing": "If your work is making someone uncomfortable enough to laugh, you're probably on something. The path from ridiculed to revered runs straight through the part where you keep going while being misunderstood. Today is one of those days.",
+        "source_title": "PROVE EVERYBODY WRONG"
+      },
+      "mindset": {
+        "quote": "It's not what you perceive about me. It's what I perceive about me.",
+        "framing": "Other people's perception of your work isn't the data that matters. Your own perception is. Today, take the part of you that's still asking 'is this any good?' and replace the question with 'is this true to what I'm trying to build?'",
+        "source_title": "PROVE THEM WRONG"
+      },
+      "action": {
+        "action_call": "Pick the one task today where you've been waiting for external validation before going harder. Stop waiting. The validation comes after the work, not before. Run the next 90 minutes as if you already had it."
+      }
+    },
+    {
+      "id": "2026-05-30",
+      "origin_date": "2026-05-30",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "Worry about your own",
+        "quote": "You become the leader of your space because you're not following anybody. You're innovating a unique path of your own.",
+        "framing": "Saturday is when comparison gets loud. The week's social feed has fed you a hundred metrics about other people's lives. Today is the day to put all of that down and remember the one thing that's actually yours: your specific path, which only you can walk.",
+        "source_title": "BECOME A SAVAGE",
+        "closing_punch": "The path no one else is walking is the only one that becomes yours."
+      },
+      "method": {
+        "quote": "Win or lose, you give every single day everything you have. You leave nothing on the table.",
+        "framing": "Identity isn't built by checking how others are doing. It's built by asking one question at the end of each day: did I leave anything on the table that was mine to give? Saturday is the cleanest day to answer that honestly because no one else is grading.",
+        "source_title": "TRUE BEAST MENTALITY"
+      },
+      "mindset": {
+        "quote": "The more weird you are is a reflection of how committed you are.",
+        "framing": "If your Saturday looks identical to everyone else's Saturday, you're not moving toward becoming what you said you wanted. The weirdness of your day is a metric. Embrace the slight strangeness of doing your own thing while others coast.",
+        "source_title": "OBSESSION"
+      },
+      "action": {
+        "action_call": "Spend an hour today on something nobody around you is doing right now. Maybe the unglamorous practice, or the meaningful conversation with yourself. Pick one and do it without comparing it to anyone else's Saturday."
+      }
+    },
+    {
+      "id": "2026-05-31",
+      "origin_date": "2026-05-31",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Pain is the price of the game",
+        "quote": "There's no game without pain. The person who refuses to be denied comes back, again and again.",
+        "framing": "Sunday is the day you decide whether last week's pain was a wall or a doorway. Same pain, different read. The version of you that calls it a wall stops here. The version that calls it a doorway shows up Monday with more capacity than they had last Sunday.",
+        "source_title": "WHEN LIFE HITS YOU",
+        "closing_punch": "Pain is data. Refusal to read it is the only loss."
+      },
+      "method": {
+        "quote": "The choice is yours of what it becomes.",
+        "framing": "Last week's events are fixed. Your interpretation isn't. Today, take the worst thing that happened this week and write down the most resourceful possible reading of it. Not optimistic. Resourceful. What does this hand you that you didn't have before?",
+        "source_title": "WHEN LIFE GETS HARD"
+      },
+      "mindset": {
+        "quote": "Hold on to faith. Things will get better. Those experiences shape you into who you need to be.",
+        "framing": "Resilience isn't about not getting hit. It's about being a different shape after the hit. Sunday is the day you take inventory of the new shape, even when you're sore from the change.",
+        "source_title": "NEVER QUIT"
+      },
+      "action": {
+        "action_call": "Take 20 minutes this Sunday and write down: what did the hardest part of this week actually teach me? Not the lesson you should have learned. The one you actually did. Read it before bed."
+      }
+    },
+    {
+      "id": "2026-06-01",
+      "origin_date": "2026-06-01",
+      "weekday": "Monday",
+      "theme": "Discipline",
+      "hook": {
+        "subject_suffix": "Set the tone, don't catch one",
+        "quote": "I set the tone for my day. Nobody's going to mess with my day.",
+        "framing": "Monday's first hour is the most important hour of the week. Whoever or whatever sets the tone of that hour usually sets the tone of the whole week. Today, you set it before anyone or anything else gets a chance.",
+        "source_title": "DISCIPLINE YOUR THINKING",
+        "closing_punch": "How you start Monday determines what Friday looks like."
+      },
+      "method": {
+        "quote": "It's high time that discipline became your best friend. Your daily companion.",
+        "framing": "Treat discipline less like a punishment and more like a relationship. The disciplined person doesn't fight themselves, they walk with themselves. The morning command isn't a threat. It's an agreement.",
+        "source_title": "YOU NEED TO DISCIPLINE YOURSELF"
+      },
+      "mindset": {
+        "quote": "Without discipline, you're not prepared for the future.",
+        "framing": "Today's discipline isn't about today. It's about the future version of you who'll inherit whatever shape today leaves them in. Every undisciplined Monday is a small theft from the person you'll be in six months.",
+        "source_title": "DISCIPLINE"
+      },
+      "action": {
+        "action_call": "Set the tone of your first 90 minutes. Decide it now, before email or anyone else's needs touch you. One specific block of work. Run it before any negotiation."
+      }
+    },
+    {
+      "id": "2026-06-02",
+      "origin_date": "2026-06-02",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Where focus goes, energy flows",
+        "quote": "Where focus goes, energy flows. Clarity equals power.",
+        "framing": "Tuesday is the day clarity wins. The blurry version of your week with vague goals and half-defined priorities gets devoured by everyone else's clear ones. Today, get specific about the single outcome that has to happen by Friday.",
+        "source_title": "YOU NEED TO FOCUS",
+        "closing_punch": "Clarity is just the willingness to choose."
+      },
+      "method": {
+        "quote": "Imagine your day only went to 1 PM. What would you have to focus on right now?",
+        "framing": "Most days quietly assume you have all 16 waking hours to work with. You don't. You have maybe 4 hours of real focus. Treat your morning as if 1 PM is your hard deadline, and run only what would matter if it were.",
+        "source_title": "YOU MUST FOCUS"
+      },
+      "mindset": {
+        "quote": "If you have scattered focus, you'll have a scattered life.",
+        "framing": "Your attention is the highest-value asset you spend each day. Most of it gets spent reactively, on whatever pings loudest. The disciplined version of you decides where it goes before anyone else has a chance to ask.",
+        "source_title": "FOCUS AND EXECUTE"
+      },
+      "action": {
+        "action_call": "Pick one outcome for this morning that would make the day a win even if everything else fell apart. Block 90 minutes for it before any meeting or message. Treat 1 PM as your hard deadline."
+      }
+    },
+    {
+      "id": "2026-06-03",
+      "origin_date": "2026-06-03",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Stay uncomfortable",
+        "quote": "Humans don't transition to another level when they're comfortable with the level they're on.",
+        "framing": "Wednesday is the deceptive day. By now your routines are humming and the week feels familiar. The discomfort that drives change has quietly leaked out of your day, and the trap is starting to feel comfortable enough to coast on.",
+        "source_title": "YOU MUST WORK HARDER",
+        "closing_punch": "Discomfort is the only Wednesday tool that keeps working."
+      },
+      "method": {
+        "quote": "The struggles along the way are only meant to shape you for your purpose.",
+        "framing": "The grind is meaningless if you're not specific about who it's shaping you into. Before today's work begins, write one sentence about the version of you that would emerge from one more uncomfortable hour. Then go earn that hour.",
+        "source_title": "DO NOT STOP GRINDING"
+      },
+      "mindset": {
+        "quote": "What controls our focus controls our life.",
+        "framing": "Wednesday's small choices control next year's big outcomes. The single hour of focused effort versus the single hour of scrolling. The single hard conversation you have versus the one you defer. Each Wednesday is a tiny pivot.",
+        "source_title": "BLOCK OUT THE WORLD AND GRIND"
+      },
+      "action": {
+        "action_call": "Pick one task today that makes you uncomfortable. Not stressful, uncomfortable. The kind that grows you. Run it for 60 minutes before you let yourself reach for anything easy."
+      }
+    },
+    {
+      "id": "2026-06-04",
+      "origin_date": "2026-06-04",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "Mindset is the determining factor",
+        "quote": "The single most determining factor of the quality of your life is your mindset.",
+        "framing": "Thursday is when belief either holds or doesn't. Six days into the week the doubts have had time to compound, and they sound rational by now. The mindset that resists them isn't louder. It's quieter and more stubborn.",
+        "source_title": "BELIEVE YOU CAN",
+        "closing_punch": "Belief is action that hasn't accumulated evidence yet."
+      },
+      "method": {
+        "quote": "It took me years to believe I could do it. That's the biggest thing you'll have to overcome.",
+        "framing": "Belief catches up to action, not the other way around. The Thursday version of you who acts as though the thing is possible eventually becomes the version who knows it. Don't wait for the belief. Create the evidence.",
+        "source_title": "YOU MUST BELIEVE IN YOU"
+      },
+      "mindset": {
+        "quote": "Use the pain as fuel to go harder.",
+        "framing": "Thursday's tiredness is information about your current capacity, but it isn't a verdict about your potential. The disciplined move is to use the tiredness as the input that makes today's effort meaningful, instead of the excuse that ends it.",
+        "source_title": "CONFIDENCE"
+      },
+      "action": {
+        "action_call": "Pick one thing today that the doubting version of you would stop short on. Push past where they'd stop. Notice how the belief shifts after, not before, the action."
+      }
+    },
+    {
+      "id": "2026-06-05",
+      "origin_date": "2026-06-05",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "Your survival rate is 100%",
+        "quote": "Your survival rate for every last bad day is 100%. You're batting a thousand.",
+        "framing": "Friday closes the week, and the brain wants to remind you of every hard moment. Every email that landed wrong and every plan that didn't go. But the data underneath is the same as every prior week: you survived all of them. Every single one.",
+        "source_title": "IT'S NOT OVER UNTIL YOU WIN",
+        "closing_punch": "What you finish on Friday is what makes Monday possible."
+      },
+      "method": {
+        "quote": "You just begin. You solve one problem, then you solve the next.",
+        "framing": "Outworking the week isn't about heroic Friday energy. It's about the smallest unit of progress. Solve the next problem, not the whole pile. Friday is the day to remember that the work is just one solved problem at a time.",
+        "source_title": "IT IS NOT OVER UNTIL I WIN"
+      },
+      "mindset": {
+        "quote": "Every time you're going through adversity, it is making you stronger.",
+        "framing": "Friday's exhaustion is real, but it's not the verdict on your capacity. It's the cost of acquiring more capacity. By Sunday, the soreness becomes the strength. By Monday, the strength becomes the new baseline.",
+        "source_title": "PROVE EVERYBODY WRONG"
+      },
+      "action": {
+        "action_call": "Pick the one task today that the tired version of you would defer to Monday. Solve it before 5 PM. Not heroic. Just solved."
+      }
+    },
+    {
+      "id": "2026-06-07",
+      "origin_date": "2026-06-07",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Define the moment",
+        "quote": "When the defining moment comes, either you define it or it defines you.",
+        "framing": "Sunday is the day this week's defining moments either become yours or own you. Most people let them happen and then build a story around the happening. The disciplined move is to choose your definition first, and let the moments fall into the frame you decided.",
+        "source_title": "WHEN LIFE SHATTERS YOU",
+        "closing_punch": "What you call this week is who you become next week."
+      },
+      "method": {
+        "quote": "Putting the next foot in front of the next foot at least keeps you in the game.",
+        "framing": "Resilience this Sunday isn't about epic comeback energy. It's about the next foot. The version of you that just keeps walking, even slowly, eventually arrives. The version that stops to wait for inspiration usually doesn't.",
+        "source_title": "WHEN LIFE IS HURTING"
+      },
+      "mindset": {
+        "quote": "Two primary choices in life: accept conditions as they exist, or take responsibility to change them.",
+        "framing": "By the end of Sunday, you've made one of these two choices about this week. Acceptance and responsibility aren't the same as resignation and effort. The disciplined version of you accepts what happened and takes responsibility for what happens next.",
+        "source_title": "KEEP GOING"
+      },
+      "action": {
+        "action_call": "Spend 15 minutes this Sunday defining one moment from this week. Write what it actually was, then write the meaning you're choosing to give it. Carry the chosen meaning into Monday."
+      }
+    },
+    {
+      "id": "2026-06-11",
+      "origin_date": "2026-06-11",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "Believe past the evidence",
+        "quote": "Belief is not the absence of doubt. It is the decision that doubt does not get the wheel.",
+        "framing": "Thursday is where the week starts presenting evidence against you. The gap between what you planned and what actually happened gets loud. Do not let that gap become a verdict. Let it become the reason you move with more precision today.",
+        "source_title": "BELIEVE IN YOURSELF",
+        "closing_punch": "Belief is not proven before the work. It is proven by the work."
+      },
+      "method": {
+        "quote": "Your mind follows the evidence you keep feeding it.",
+        "framing": "Belief is trained by selecting better evidence. Find one kept promise from this week, even a small one, and let that be the proof you work from today instead of the miss you keep replaying.",
+        "source_title": "CHANGE YOUR MINDSET"
+      },
+      "mindset": {
+        "quote": "Before the result changes, the sentence you repeat to yourself has to change.",
+        "framing": "The mind will always try to make a mood sound like a conclusion. It is not. A mood is temporary weather. Belief is the operating system you choose while the weather is still passing.",
+        "source_title": "I CAN DO THIS"
+      },
+      "action": {
+        "action_call": "Write down one sentence you are tired of hearing from yourself. Under it, write one sentence that is truer and more useful. Carry the second sentence into the first hard decision of the day."
+      }
+    },
+    {
+      "id": "2026-06-12",
+      "origin_date": "2026-06-12",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "Finish like it counts",
+        "quote": "The week does not owe you a clean ending. You owe the week a strong one.",
+        "framing": "Friday tempts you to treat the last stretch like a cooldown. That is how average weeks stay average. Today is not a victory lap. It is the final rep that tells you whether the week owned you or you owned the week.",
+        "source_title": "I WILL WIN",
+        "closing_punch": "A strong Friday changes the tone of the whole week."
+      },
+      "method": {
+        "quote": "Winning is often one more honest rep after everyone else has mentally left.",
+        "framing": "Pick the unfinished thing that would make the weekend quieter if it were done. Not the easiest task, the one that removes weight. Put one focused block on it before the day gets loose.",
+        "source_title": "IT IS NOT OVER UNTIL I WIN"
+      },
+      "mindset": {
+        "quote": "Do not ask whether you have enough left. Ask what the standard requires.",
+        "framing": "The person who finishes hard does not need perfect energy. They need a clear standard. Standards make decisions for you when motivation starts negotiating for comfort.",
+        "source_title": "OUTWORK EVERYBODY"
+      },
+      "action": {
+        "action_call": "Choose one task you would normally push to Monday. Finish it or move it far enough that Monday cannot use it against you."
+      }
+    },
+    {
+      "id": "2026-06-13",
+      "origin_date": "2026-06-13",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "Private reps count twice",
+        "quote": "What you do when no one checks becomes the shape of your character.",
+        "framing": "Saturday removes the structure that carried you through the week. No calendar pressure, no office rhythm, no external scoreboard. That is why Saturday is useful. It shows you what standard survives without being watched.",
+        "source_title": "WHEN NO ONE IS WATCHING",
+        "closing_punch": "Identity is built in rooms with no applause."
+      },
+      "method": {
+        "quote": "The invisible rep is never wasted. It is stored as identity.",
+        "framing": "Do one thing today that belongs entirely to the identity you are building. Make it small enough to start and real enough to count. The private rep matters because it cannot be explained away as performance.",
+        "source_title": "SAVAGE MENTALITY"
+      },
+      "mindset": {
+        "quote": "Commitment begins after the audience disappears.",
+        "framing": "You do not become disciplined in public. Public only reveals what private has already built. The version of you that wins later is being negotiated right now in quiet hours.",
+        "source_title": "COMMITMENT"
+      },
+      "action": {
+        "action_call": "Pick one private rep: a workout, a study block, a cleanup, a hard errand, or ten pages read. Do it without announcing it."
+      }
+    },
+    {
+      "id": "2026-06-14",
+      "origin_date": "2026-06-14",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Recover without retreating",
+        "quote": "Rest is useful when it restores the fighter, not when it hides the fight.",
+        "framing": "Sunday can become a soft exit from responsibility if you let it. The body wants rest and the mind wants escape. Give the body what it needs, but do not let escape dress itself up as recovery.",
+        "source_title": "WHEN LIFE GETS TOUGH",
+        "closing_punch": "Recover like someone who intends to return sharper."
+      },
+      "method": {
+        "quote": "The hard week behind you is not an excuse. It is material.",
+        "framing": "Use today to reset the room, the calendar, and the first decision of Monday. Resilience is not only surviving pressure. It is preparing the next clean move before pressure returns.",
+        "source_title": "I MUST KEEP GOING"
+      },
+      "mindset": {
+        "quote": "Resilience is learning how to bend without lowering the standard.",
+        "framing": "A difficult week does not mean you are behind. It means you have fresh information about where the system leaks. Fix one leak today and the same pressure hits a stronger structure next time.",
+        "source_title": "YOU WILL NOT BREAK ME"
+      },
+      "action": {
+        "action_call": "Spend twenty minutes clearing one source of friction for tomorrow. Lay out the workout, write the first task, clean the desk, or decide what gets ignored until noon."
+      }
+    },
+    {
+      "id": "2026-06-15",
+      "origin_date": "2026-06-15",
+      "weekday": "Monday",
+      "theme": "Discipline",
+      "hook": {
+        "subject_suffix": "Start before negotiation",
+        "quote": "The longer you debate the first rep, the more power the excuse collects.",
+        "framing": "Monday gives your easier self a courtroom. It wants to argue timing, sleep, energy, and whether today is really the day. Do not attend the hearing. Start before the arguments get organized.",
+        "source_title": "DISCIPLINE YOURSELF",
+        "closing_punch": "Monday is won before the excuse gets eloquent."
+      },
+      "method": {
+        "quote": "Discipline is action taken before mood files an appeal.",
+        "framing": "The first decision should be too small to debate and too useful to skip. Put your body into motion, open the document, lace the shoes, start the timer. Momentum does not arrive first. It follows the first honest move.",
+        "source_title": "KILL YOUR EXCUSES"
+      },
+      "mindset": {
+        "quote": "A clean start is not found. It is forced.",
+        "framing": "Your mind respects what you repeat. If you repeat negotiation, it will bring better excuses. If you repeat execution, it eventually stops asking for permission.",
+        "source_title": "FORCE YOURSELF TO DO IT"
+      },
+      "action": {
+        "action_call": "Pick one non-negotiable action and do it in the first hour you control. Do not improve the plan first. Execute the opening rep."
+      }
+    },
+    {
+      "id": "2026-06-16",
+      "origin_date": "2026-06-16",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Fewer doors, more depth",
+        "quote": "Focus is the courage to close doors that still look useful.",
+        "framing": "Tuesday is where good options start pretending to be obligations. A call here, a side task there, a little harmless checking. None of it looks fatal alone. Together it steals the depth the real work needs.",
+        "source_title": "FOCUS AND EXECUTE",
+        "closing_punch": "A focused day is a protected day."
+      },
+      "method": {
+        "quote": "Every open option taxes the work that actually matters.",
+        "framing": "Focus is not adding intensity. It is subtracting leakage. Name the one thing that matters most today, then name the two things that are most likely to impersonate urgency and steal from it.",
+        "source_title": "STAY FOCUSED"
+      },
+      "mindset": {
+        "quote": "The goal gets louder when the noise gets smaller.",
+        "framing": "You will feel the cost of focus before you feel the reward. The first cost is discomfort from saying no. Pay it early and the rest of the day gets cleaner.",
+        "source_title": "YOU MUST FOCUS"
+      },
+      "action": {
+        "action_call": "Block 90 minutes for the one task that would make the day meaningful. Close every input that is not required for that task."
+      }
+    },
+    {
+      "id": "2026-06-17",
+      "origin_date": "2026-06-17",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Keep the pressure on",
+        "quote": "The middle of the week rewards people who keep moving when the work stops feeling new.",
+        "framing": "Wednesday is not dramatic. That is why it matters. No fresh Monday energy, no Friday finish line, just the plain middle where the work either continues or quietly leaks away.",
+        "source_title": "GRIND EVERY DAY",
+        "closing_punch": "The middle is where momentum either compounds or quits."
+      },
+      "method": {
+        "quote": "Grind is repetition after the novelty leaves.",
+        "framing": "The grind today is one useful block of effort with no ceremony around it. Find the task you already know needs pressure and put pressure on it before the afternoon starts making excuses for you.",
+        "source_title": "BLOCK OUT THE WORLD AND GRIND"
+      },
+      "mindset": {
+        "quote": "Do not confuse being tired with being done.",
+        "framing": "Tired is information, not instruction. It tells you to manage energy. It does not tell you to drop the standard. The standard stays while the tactics adjust.",
+        "source_title": "KEEP WORKING"
+      },
+      "action": {
+        "action_call": "Choose one task that has been moving too slowly. Give it 60 uninterrupted minutes and measure output, not intention."
+      }
+    },
+    {
+      "id": "2026-06-18",
+      "origin_date": "2026-06-18",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "Rehearse the stronger voice",
+        "quote": "The voice that wins is usually the voice you rehearse most.",
+        "framing": "Thursday gives the inner critic enough material to sound convincing. It will point at every miss and call it identity. That is the trick. A miss is an event. Identity is what you choose next.",
+        "source_title": "CONFIDENCE",
+        "closing_punch": "The stronger voice gets stronger when it has proof."
+      },
+      "method": {
+        "quote": "Confidence grows when your actions stop contradicting your claims.",
+        "framing": "Do not try to silence the critic by arguing with it all day. Out-evidence it. Keep one promise that is small, visible, and finished before noon. Let completion answer the noise.",
+        "source_title": "BELIEVE YOU CAN"
+      },
+      "mindset": {
+        "quote": "Belief needs practice the same way skill does.",
+        "framing": "Confidence is not a mood you wait for. It is a ledger. Every kept promise adds weight. Every abandoned promise charges interest. Today is a chance to add weight to the right side.",
+        "source_title": "I CAN MAKE IT"
+      },
+      "action": {
+        "action_call": "Pick one promise you can keep by noon and keep it cleanly. No announcement, no revision, no delay."
+      }
+    },
+    {
+      "id": "2026-06-19",
+      "origin_date": "2026-06-19",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "Make the standard visible",
+        "quote": "Outworking is not noise. It is evidence that the standard is alive.",
+        "framing": "Friday will let you get away with less. That is the danger. The outside world may accept a half-speed finish, but your future self knows exactly where you lowered the bar.",
+        "source_title": "WORK ETHIC",
+        "closing_punch": "Coasting is expensive. Standards are cheaper."
+      },
+      "method": {
+        "quote": "Do the work in a way your future self can trust.",
+        "framing": "Make the standard visible in one place today. Ship the cleaner version, finish the final pass, take the harder set, or make the conversation direct. Outwork shows up as craftsmanship before it shows up as trophies.",
+        "source_title": "YOU WILL NOT OUTWORK ME"
+      },
+      "mindset": {
+        "quote": "Winning starts as a refusal to coast when coasting would be accepted.",
+        "framing": "The point is not to punish yourself with endless work. The point is to become the kind of person who does not need external pressure to finish with quality.",
+        "source_title": "BE OBSESSED WITH WINNING"
+      },
+      "action": {
+        "action_call": "Choose one output and raise the standard by one notch. Not ten notches. One clear, visible improvement before you call the week done."
+      }
+    },
+    {
+      "id": "2026-06-20",
+      "origin_date": "2026-06-20",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "The hidden vote",
+        "quote": "Every quiet choice casts a vote for the person you are becoming.",
+        "framing": "Saturday gives you space to disappear from your own goals. Nobody would blame you. Nobody would know. That is exactly why the choice matters. The hidden vote counts because it is honest.",
+        "source_title": "BECOME A BEAST",
+        "closing_punch": "The hidden vote becomes the visible life."
+      },
+      "method": {
+        "quote": "Identity does not ask what you meant. It records what you did.",
+        "framing": "Choose one action that keeps faith with the version of you you keep describing. It does not need to be extreme. It needs to be true. A small true action beats a dramatic plan you never touch.",
+        "source_title": "TRUE BEAST MENTALITY"
+      },
+      "mindset": {
+        "quote": "The weekend standard is the real standard.",
+        "framing": "The self-image you want will not arrive through imagination. It arrives through repeated receipts. Today is one receipt. Keep it simple and make it real.",
+        "source_title": "WHEN NOBODY IS WATCHING"
+      },
+      "action": {
+        "action_call": "Do one identity vote before noon: train, read, write, clean, build, or repair. Let the day know who is in charge early."
+      }
+    },
+    {
+      "id": "2026-06-21",
+      "origin_date": "2026-06-21",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Turn pressure into structure",
+        "quote": "Pressure is wasted when it only makes you panic. Use it to build structure.",
+        "framing": "Sunday is a good day to stop calling everything stress and start sorting it. Some pressure is real. Some is noise. Some is a signal that your system needs structure before the next week hits.",
+        "source_title": "NO MATTER HOW HARD IT GETS",
+        "closing_punch": "Do not just survive the pattern. Redesign it."
+      },
+      "method": {
+        "quote": "The setback is not the lesson. The adjustment is.",
+        "framing": "Name the one pressure from last week that kept repeating. Then make one structural adjustment around it: a boundary, a checklist, a blocked hour, a conversation, or a removed temptation.",
+        "source_title": "PUSH THROUGH IT"
+      },
+      "mindset": {
+        "quote": "Resilience is what happens after the emotional reaction passes.",
+        "framing": "Resilience is not just taking the hit. It is refusing to take the same hit the same way forever. The adjustment is where growth becomes visible.",
+        "source_title": "WHEN THINGS GET HARD"
+      },
+      "action": {
+        "action_call": "Write down one recurring pressure and one structural fix. Put the fix somewhere Monday cannot miss it."
+      }
+    },
+    {
+      "id": "2026-06-22",
+      "origin_date": "2026-06-22",
+      "weekday": "Monday",
+      "theme": "Discipline",
+      "hook": {
+        "subject_suffix": "No soft opening",
+        "quote": "A soft Monday becomes a heavy week.",
+        "framing": "Monday does not need a warmup lap. It needs a signal. If the first signal is drift, the whole day learns drift. If the first signal is execution, the day has to organize around that.",
+        "source_title": "SELF DISCIPLINE",
+        "closing_punch": "Set the standard before the day sets one for you."
+      },
+      "method": {
+        "quote": "Discipline is the decision to make the first move clean.",
+        "framing": "Start with the action that creates the most downstream order. Maybe that is training, planning, writing, or the one difficult task that prevents the rest of the day from pretending to be productive.",
+        "source_title": "GET UP AND GET IT DONE"
+      },
+      "mindset": {
+        "quote": "The day takes shape around the earliest standard you set.",
+        "framing": "The first clean action is not about productivity theater. It is about identity under load. You are teaching yourself that a new week starts with command, not reaction.",
+        "source_title": "TAKE CONTROL OF YOURSELF"
+      },
+      "action": {
+        "action_call": "Before opening the loudest inbox, complete one action that makes the rest of the week easier. Keep it measurable."
+      }
+    },
+    {
+      "id": "2026-06-23",
+      "origin_date": "2026-06-23",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Guard the main thing",
+        "quote": "The main thing does not stay main by accident.",
+        "framing": "Tuesday is where urgency starts borrowing your attention without collateral. A quick check, a quick favor, a quick detour. The danger is not one detour. The danger is forgetting what road you were on.",
+        "source_title": "FOCUS ON YOU",
+        "closing_punch": "Attention is either guarded or spent by strangers."
+      },
+      "method": {
+        "quote": "Distraction rarely attacks loudly. It asks for five harmless minutes.",
+        "framing": "Make the main thing visible before the day gets crowded. Write it somewhere you will see it. Then defend it with a block of time that is as real as any meeting on the calendar.",
+        "source_title": "YOU HAVE TO FOCUS ON YOU"
+      },
+      "mindset": {
+        "quote": "Your attention is the budget your future spends from.",
+        "framing": "Focus requires some selfishness with your attention. That is not neglect. It is stewardship. You cannot build the thing you keep donating in fragments to everyone else's noise.",
+        "source_title": "STAY LOCKED IN"
+      },
+      "action": {
+        "action_call": "Name the main thing in one sentence and give it the best 75 minutes you have left today. Protect the block like it belongs to someone important."
+      }
+    },
+    {
+      "id": "2026-06-24",
+      "origin_date": "2026-06-24",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Work without witnesses",
+        "quote": "The work that changes you usually has no witnesses.",
+        "framing": "Wednesday gives you the chance to do work that looks boring from the outside and matters from the inside. That is the kind of work most people skip because it does not give them a quick identity boost.",
+        "source_title": "WORK HARD IN SILENCE",
+        "closing_punch": "Quiet work has a loud future."
+      },
+      "method": {
+        "quote": "A quiet block done honestly beats a loud plan repeated forever.",
+        "framing": "Pick a block of work today that can be judged by output. Pages, reps, calls, commits, cleaned items, solved problems. Make the number plain and let the work speak in units.",
+        "source_title": "GRIND IN SILENCE"
+      },
+      "mindset": {
+        "quote": "Grind is a private agreement with the future.",
+        "framing": "You do not need the work to feel meaningful while you are doing it. Meaning often shows up after repetition has already done its job. Keep the promise long enough for the result to catch up.",
+        "source_title": "DO NOT STOP GRINDING"
+      },
+      "action": {
+        "action_call": "Set a 60-minute timer and produce something countable. No announcement required. Let the number be the receipt."
+      }
+    },
+    {
+      "id": "2026-06-25",
+      "origin_date": "2026-06-25",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "Evidence over emotion",
+        "quote": "Do not let one tired emotion overrule a week of evidence.",
+        "framing": "Thursday emotion can be persuasive because it has fatigue on its side. It will tell you the work is not working. Before you believe it, look for evidence. What did you finish? What did you resist? What promise did you keep?",
+        "source_title": "BELIEVE YOU CAN DO THIS",
+        "closing_punch": "Receipts beat moods."
+      },
+      "method": {
+        "quote": "Belief gets cleaner when it is backed by receipts.",
+        "framing": "Build a quick proof list today. Three facts, not feelings. The point is not to inflate yourself. The point is to stop letting the most tired voice in the room define the whole week.",
+        "source_title": "MASTER YOUR MIND"
+      },
+      "mindset": {
+        "quote": "The mind trusts what the body repeatedly proves.",
+        "framing": "Belief is strongest when it is honest. You can admit the misses and still refuse the verdict. The ledger is mixed, but it is not empty, and empty is what the critic wants you to believe.",
+        "source_title": "CONTROL YOUR MINDSET"
+      },
+      "action": {
+        "action_call": "Write three pieces of evidence that you are still in motion. Then add one more by completing a promise before the day ends."
+      }
+    },
+    {
+      "id": "2026-06-26",
+      "origin_date": "2026-06-26",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "One more clean rep",
+        "quote": "The difference is often one clean rep when no one would notice a sloppy one.",
+        "framing": "Friday does not need a speech. It needs one more clean rep. One cleaner handoff, one better set, one finished paragraph, one uncomfortable call. The week is asking whether you stop at acceptable or finish at your standard.",
+        "source_title": "YOU NEED TO WORK HARDER",
+        "closing_punch": "One clean rep can change how the whole week lands."
+      },
+      "method": {
+        "quote": "Outwork starts where acceptable effort ends.",
+        "framing": "Look at the thing you are about to call done. Give it one clean pass. Remove the sloppy edge, finish the missing piece, or make the final decision that keeps it from dragging into next week.",
+        "source_title": "WORK HARDER THAN EVERYONE"
+      },
+      "mindset": {
+        "quote": "Win the finish, not the fantasy.",
+        "framing": "This is not perfectionism. Perfectionism hides from shipping. Standards improve what is already moving. Keep it moving and make it cleaner.",
+        "source_title": "GET IT DONE"
+      },
+      "action": {
+        "action_call": "Choose one deliverable and give it one final honest pass. When it is cleaner, stop and ship it."
+      }
+    },
+    {
+      "id": "2026-06-27",
+      "origin_date": "2026-06-27",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "Keep faith with yourself",
+        "quote": "Self-trust is built by keeping promises no one else heard.",
+        "framing": "Saturday is an honesty test. During the week, structure can make you look more committed than you are. On the weekend, the scaffolding drops. What remains is the actual relationship you have with your promises.",
+        "source_title": "FULL COMMITMENT",
+        "closing_punch": "Every kept promise makes the next start lighter."
+      },
+      "method": {
+        "quote": "The private standard is the foundation under every public result.",
+        "framing": "Keep one promise today simply because you said you would. Not because it is urgent, visible, or impressive. The point is to make your own word feel heavy again.",
+        "source_title": "STAY CONSISTENT"
+      },
+      "mindset": {
+        "quote": "You cannot fake identity to yourself for long.",
+        "framing": "Self-trust is not a motivational concept. It is operational. When you trust yourself, starting gets easier because your mind has evidence that your plans are not fiction.",
+        "source_title": "CONTROL YOURSELF"
+      },
+      "action": {
+        "action_call": "Choose one promise from the week that still matters. Close the loop today, even if the loop is small."
+      }
+    },
+    {
+      "id": "2026-06-28",
+      "origin_date": "2026-06-28",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Bend, reset, return",
+        "quote": "Resilience is not pretending the hit missed. It is deciding the hit does not get the final word.",
+        "framing": "Sunday is where you decide what the hard parts of the week become. They can become excuses, or they can become instructions. The difference is whether you turn pain into adjustment.",
+        "source_title": "I CAN GET THROUGH THIS",
+        "closing_punch": "Reset is not surrender. It is preparation."
+      },
+      "method": {
+        "quote": "The reset is part of the fight.",
+        "framing": "Review the week without drama. What drained you? What strengthened you? What needs to be changed before Monday? Resilience gets practical when the answer becomes a calendar block or a boundary.",
+        "source_title": "WHEN LIFE HURTS"
+      },
+      "mindset": {
+        "quote": "A hard week can either make you smaller or make your system smarter.",
+        "framing": "You are allowed to be tired without becoming careless. You are allowed to reset without retreating. The fighter who lasts is the one who learns how to recover on purpose.",
+        "source_title": "KEEP FIGHTING"
+      },
+      "action": {
+        "action_call": "Write one adjustment for the coming week and make it concrete: time, place, trigger, or boundary. Then do something that restores your body without numbing your mind."
+      }
+    },
+    {
+      "id": "2026-06-29",
+      "origin_date": "2026-06-29",
+      "weekday": "Monday",
+      "theme": "Discipline",
+      "hook": {
+        "subject_suffix": "Discipline before drama",
+        "quote": "The disciplined move is usually smaller and earlier than the dramatic one.",
+        "framing": "Monday drama is optional more often than it feels. A lot of chaos is just delayed discipline with better lighting. Today, do the boring thing early before it becomes the emergency thing later.",
+        "source_title": "SELF CONTROL",
+        "closing_punch": "Early discipline is cheaper than late panic."
+      },
+      "method": {
+        "quote": "Do not wait until the day is on fire to become serious.",
+        "framing": "Find the task that prevents three future problems. It might be planning, paying, cleaning, training, writing, or sending the message. Handle it before the day has enough noise to make delay sound reasonable.",
+        "source_title": "DISCIPLINE YOUR THINKING"
+      },
+      "mindset": {
+        "quote": "Order is built before urgency arrives.",
+        "framing": "Discipline is not intensity. Intensity spikes and disappears. Discipline is a quiet prepayment against the version of life where everything costs more because you waited.",
+        "source_title": "CONSISTENCY"
+      },
+      "action": {
+        "action_call": "Complete one preventive action in the first half of the day. Do not chase drama until the obvious discipline is done."
+      }
+    },
+    {
+      "id": "2026-06-30",
+      "origin_date": "2026-06-30",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Cut the extra tabs",
+        "quote": "Every extra tab is a tiny promise to abandon the present.",
+        "framing": "Tuesday fragmentation can look like productivity. Tabs open, messages moving, notes half-written, a dozen threads alive. The real question is simpler: what did you move that mattered?",
+        "source_title": "FOCUS YOUR MIND",
+        "closing_punch": "Depth begins when escape gets inconvenient."
+      },
+      "method": {
+        "quote": "Focus means making the next hour inhospitable to distraction.",
+        "framing": "Design one hour with fewer exits. Close what is not needed, define the output, and make the cost of switching high enough that your attention stays where you placed it.",
+        "source_title": "YOU NEED TO FOCUS"
+      },
+      "mindset": {
+        "quote": "The work deepens when the exits close.",
+        "framing": "Your brain will call distraction relief because deep work creates friction. That does not make distraction restorative. It makes it seductive. Stay with the friction until it becomes progress.",
+        "source_title": "STAY FOCUSED ON YOUR GOAL"
+      },
+      "action": {
+        "action_call": "Run one single-output hour. One task, one visible result, no parallel checking."
+      }
+    },
+    {
+      "id": "2026-07-01",
+      "origin_date": "2026-07-01",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Earn the middle",
+        "quote": "The middle of the week is not a place to coast. It is a place to earn proof.",
+        "framing": "Wednesday asks for proof without promising applause. That is why it builds you. Anybody can plan loudly on Monday. Fewer people can make the same promise still matter in the middle.",
+        "source_title": "KEEP GRINDING EVERY DAY",
+        "closing_punch": "The middle is not filler. It is where the proof is made."
+      },
+      "method": {
+        "quote": "Grind is doing the needed thing after it stopped being interesting.",
+        "framing": "Choose the repeatable work today. The boring practice, the follow-up, the second draft, the next set. Let repetition do what inspiration cannot do for you.",
+        "source_title": "GRIND EVERY SINGLE DAY"
+      },
+      "mindset": {
+        "quote": "Repetition is where the standard becomes believable.",
+        "framing": "Do not despise the ordinary rep. The ordinary rep is the compounder. It is the thing that looks forgettable while it is quietly changing what you can trust yourself to do.",
+        "source_title": "JUST KEEP GRINDING"
+      },
+      "action": {
+        "action_call": "Pick one repeatable rep and complete it with full attention. Track it somewhere so the streak has a receipt."
+      }
+    },
+    {
+      "id": "2026-07-02",
+      "origin_date": "2026-07-02",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "Choose the useful story",
+        "quote": "The story you tell yourself becomes the room you live in.",
+        "framing": "Thursday is when the week starts becoming a story. You will tell yourself it was productive, messy, heavy, promising, ruined, or still salvageable. Choose carefully. The story determines the next move.",
+        "source_title": "CHANGE YOUR LIFE",
+        "closing_punch": "Tell the truth in a way that keeps you moving."
+      },
+      "method": {
+        "quote": "Belief is choosing the story that makes action more likely.",
+        "framing": "Pick the most useful true story. Not fake positivity. Useful truth. Maybe the week was hard and you are still moving. Maybe the result is late and the next step is clear. Say the version that creates action.",
+        "source_title": "BELIEVE IN YOURSELF"
+      },
+      "mindset": {
+        "quote": "Your past is evidence, not a prison sentence.",
+        "framing": "A destructive story can feel honest because it includes pain. But honesty that omits your agency is still incomplete. Include the agency. Include the next move.",
+        "source_title": "I WILL MAKE IT"
+      },
+      "action": {
+        "action_call": "Write one useful true sentence about this week. Then take the action that sentence demands."
+      }
+    },
+    {
+      "id": "2026-07-04",
+      "origin_date": "2026-07-04",
+      "weekday": "Saturday",
+      "theme": "Identity",
+      "hook": {
+        "subject_suffix": "Freedom needs a standard",
+        "quote": "Freedom without a standard becomes drift with better branding.",
+        "framing": "Saturday gives you freedom, and freedom reveals training. If there is no plan, the day will happily become whatever is easiest. That is not rest. That is surrender disguised as looseness.",
+        "source_title": "CONTROL YOUR LIFE",
+        "closing_punch": "Own the open space before it owns you."
+      },
+      "method": {
+        "quote": "The strongest version of you uses open space on purpose.",
+        "framing": "Use a small standard to shape the open space. One physical rep, one maintenance task, one hour for the thing you say matters. Then enjoy the rest without the quiet tax of avoidance.",
+        "source_title": "LION MENTALITY"
+      },
+      "mindset": {
+        "quote": "Identity is what you do when the day is yours.",
+        "framing": "A standard does not make the day smaller. It makes the day yours. The point is not to squeeze joy out of it. The point is to stop handing your agency to ease by default.",
+        "source_title": "BECOME AN ABSOLUTE SAVAGE"
+      },
+      "action": {
+        "action_call": "Set one Saturday standard and meet it before the day spreads out. Keep it simple enough that there is no excuse to delay."
+      }
+    },
+    {
+      "id": "2026-07-05",
+      "origin_date": "2026-07-05",
+      "weekday": "Sunday",
+      "theme": "Resilience",
+      "hook": {
+        "subject_suffix": "Carry the lesson forward",
+        "quote": "A hard lesson only helps if you carry it into the next decision.",
+        "framing": "Sunday is not only for recovery. It is for translation. The week taught you something through friction. If you do not translate it into a changed behavior, the same lesson returns louder.",
+        "source_title": "WHEN LIFE KNOCKS YOU DOWN",
+        "closing_punch": "The lesson is not complete until behavior changes."
+      },
+      "method": {
+        "quote": "Resilience turns pain into preparation.",
+        "framing": "Look at the one place you got hit hardest this week. Ask what would have made you sturdier. Then set that thing up before Monday starts asking for it.",
+        "source_title": "GOING THROUGH TOUGH TIMES"
+      },
+      "mindset": {
+        "quote": "Do not waste the bruise by refusing the lesson.",
+        "framing": "Resilience is not being untouched. It is becoming less fragile after contact. The lesson matters because it changes the next collision.",
+        "source_title": "PUSH THROUGH PAIN"
+      },
+      "action": {
+        "action_call": "Name one lesson from the week and turn it into one setup action for Monday. Put it on the calendar or in the room where it will happen."
+      }
+    },
+    {
+      "id": "2026-07-07",
+      "origin_date": "2026-07-07",
+      "weekday": "Tuesday",
+      "theme": "Focus",
+      "hook": {
+        "subject_suffix": "Fewer inputs, stronger output",
+        "quote": "The quality of your output is tied to the discipline of your inputs.",
+        "framing": "Tuesday can become an input buffet. News, messages, dashboards, feeds, opinions, half-useful updates. Some of it is information. Much of it is just friction wearing a useful mask.",
+        "source_title": "YOU MUST FOCUS YOUR MIND",
+        "closing_punch": "Cleaner inputs create stronger work."
+      },
+      "method": {
+        "quote": "Focus is what happens when you stop feeding every appetite for novelty.",
+        "framing": "Choose a cleaner input environment for one work block. Put only the materials required for the task in front of you. Let the absence of noise do some of the work.",
+        "source_title": "FOCUS YOUR MIND"
+      },
+      "mindset": {
+        "quote": "The next level needs less noise than the current one tolerates.",
+        "framing": "Your attention is not weak because distraction is available. It is weakened by repeated permission. Today, remove the permission and see how much stronger the work becomes.",
+        "source_title": "KILL YOUR LAZY THOUGHTS"
+      },
+      "action": {
+        "action_call": "Run one output-first block before consuming optional inputs. Make something before you check everything."
+      }
+    },
+    {
+      "id": "2026-07-08",
+      "origin_date": "2026-07-08",
+      "weekday": "Wednesday",
+      "theme": "Grind",
+      "hook": {
+        "subject_suffix": "Stay with the unglamorous part",
+        "quote": "The unglamorous part is usually where the result is hiding.",
+        "framing": "Wednesday brings you to the unglamorous part again. The setup is over, the finish is not close, and the work is simply there. This is where people start looking for a new plan instead of honoring the current one.",
+        "source_title": "DO HARD THINGS",
+        "closing_punch": "The boring rep is still a rep."
+      },
+      "method": {
+        "quote": "Grind means staying after the easy motivation leaves the room.",
+        "framing": "Do the part of the process that feels least exciting but most necessary. The follow-up, the repetition, the documentation, the cleanup, the second pass. That is where the work gains durability.",
+        "source_title": "GET UP AND WORK"
+      },
+      "mindset": {
+        "quote": "Reps become results after boredom stops being a reason to quit.",
+        "framing": "Boredom is not a warning sign. Sometimes boredom is just the feeling of doing the right thing long enough for it to compound. Stay with it.",
+        "source_title": "KEEP GRINDING"
+      },
+      "action": {
+        "action_call": "Pick the least glamorous necessary task and complete a measurable chunk of it today. Let boredom be part of the rep."
+      }
+    },
+    {
+      "id": "2026-07-09",
+      "origin_date": "2026-07-09",
+      "weekday": "Thursday",
+      "theme": "Belief",
+      "hook": {
+        "subject_suffix": "Trust the kept promises",
+        "quote": "A kept promise is stronger than a perfect plan.",
+        "framing": "Thursday can make the week feel unfinished in every direction. That is when you need proof, not noise. Look for the promises you kept, then add one more before the day closes.",
+        "source_title": "BELIEVE YOU CAN DO IT",
+        "closing_punch": "Proof makes belief durable."
+      },
+      "method": {
+        "quote": "Belief becomes easier when your behavior stops arguing with it.",
+        "framing": "Keep the next promise small and exact. The size is less important than the cleanliness. A clean promise closes the loop between what you say and what you do.",
+        "source_title": "SELF CONFIDENCE"
+      },
+      "mindset": {
+        "quote": "Trust yourself by giving yourself proof, not speeches.",
+        "framing": "Self-trust is built in exact units. Not vague effort. Not big intentions. Exact promises kept enough times that your nervous system starts believing your own plans again.",
+        "source_title": "YOU CAN DO IT"
+      },
+      "action": {
+        "action_call": "Make one exact promise for the next two hours and keep it. Write it down first so there is no room to rename it later."
+      }
+    },
+    {
+      "id": "2026-07-10",
+      "origin_date": "2026-07-10",
+      "weekday": "Friday",
+      "theme": "Outwork / Win",
+      "hook": {
+        "subject_suffix": "Close the loop",
+        "quote": "An open loop drains more than it looks like it should.",
+        "framing": "Friday is loop-closing day. The week left behind loose ends, and some of them are harmless. One of them is not. One of them will tax the weekend and greet you on Monday if you leave it open.",
+        "source_title": "GET IT DONE",
+        "closing_punch": "Close the loop and take your mind back."
+      },
+      "method": {
+        "quote": "Winning the week means refusing to carry avoidable weight into the next one.",
+        "framing": "Find the loop with the highest mental rent. Send the message, make the decision, clean the handoff, finish the draft, or write the next action clearly enough that Monday can pick it up without confusion.",
+        "source_title": "PROVE THEM WRONG"
+      },
+      "mindset": {
+        "quote": "The finish line is cleaner when you decide what gets closed.",
+        "framing": "Outworking is not always adding more. Sometimes it is ending cleanly. A clean close is a sign of respect for the next version of you.",
+        "source_title": "IT'S NOT OVER UNTIL YOU WIN"
+      },
+      "action": {
+        "action_call": "Close one loop before the week ends. If it cannot be finished, define the next action so clearly that it stops taking up background space."
+      }
+    }
+  ]
+}

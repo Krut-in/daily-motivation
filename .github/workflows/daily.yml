@@ -2,73 +2,139 @@ name: Daily Motivation Email
 
 on:
   schedule:
-    # GitHub Actions free-runner cron is delayed 80-200+ minutes (observed
-    # 82, 148, 195 in the recent week). We fan out 21 triggers every 15 min
-    # from 7:30 to 12:30 UTC, which covers delays from ~0 up to ~240 min
-    # while still landing in the 7:30-8:30 AM ET window in nearly all cases.
-    # Two guards in daily_motivation.py do the actual filtering:
-    #   1. Window guard: exit silently if current ET time < 7:30 AM.
-    #   2. Dedup guard: exit silently if today's archive file already exists.
-    # The concurrency block below serializes runs so two near-simultaneous
-    # triggers cannot both pass the dedup guard and double-send.
-    # DST is handled inside the Python script via zoneinfo, so this list
-    # never needs seasonal edits.
-    - cron: '30 7 * * *'
-    - cron: '45 7 * * *'
-    - cron: '0 8 * * *'
-    - cron: '15 8 * * *'
-    - cron: '30 8 * * *'
-    - cron: '45 8 * * *'
-    - cron: '0 9 * * *'
-    - cron: '15 9 * * *'
-    - cron: '30 9 * * *'
-    - cron: '45 9 * * *'
-    - cron: '0 10 * * *'
-    - cron: '15 10 * * *'
-    - cron: '30 10 * * *'
-    - cron: '45 10 * * *'
-    - cron: '0 11 * * *'
-    - cron: '15 11 * * *'
-    - cron: '30 11 * * *'
-    - cron: '45 11 * * *'
-    - cron: '0 12 * * *'
-    - cron: '15 12 * * *'
-    - cron: '30 12 * * *'
-  workflow_dispatch:  # manual trigger for testing
-
-concurrency:
-  group: daily-motivation
-  cancel-in-progress: false  # let the in-flight run finish; queue the next one
+    # GitHub may delay scheduled runs, so these 21 attempts fan out across the
+    # morning. The script's 7:30 AM guard and archive check decide whether an
+    # attempt should actually send.
+    - cron: '30,45 3 * * *'
+      timezone: America/New_York
+    - cron: '*/15 4-7 * * *'
+      timezone: America/New_York
+    - cron: '0,15,30 8 * * *'
+      timezone: America/New_York
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Preview a date, or send today's live email
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - live
+      force_date:
+        description: Preview date in YYYY-MM-DD format (required for preview; ignored for live)
+        required: false
+        type: string
+      confirmation:
+        description: Type SEND TODAY to confirm a live send
+        required: false
+        type: string
 
 permissions:
-  contents: write  # to commit archive markdown back to the repo
+  contents: read
 
 jobs:
-  send:
+  preview:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.mode == 'preview' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout current default branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
-      - name: Send daily email
+      - name: Validate preview date
+        env:
+          FORCE_DATE: ${{ inputs.force_date }}
+        run: |
+          if [[ ! "$FORCE_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "::error::Preview mode requires force_date in YYYY-MM-DD format."
+            exit 1
+          fi
+          python - "$FORCE_DATE" <<'PY'
+          import sys
+          from datetime import date
+
+          try:
+              date.fromisoformat(sys.argv[1])
+          except ValueError as exc:
+              raise SystemExit(f"Invalid preview date: {exc}")
+          PY
+
+      - name: Render preview
+        env:
+          FORCE_DATE: ${{ inputs.force_date }}
+        run: python daily_motivation.py --dry-run --force-date "$FORCE_DATE"
+
+  deliver:
+    if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'live') }}
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ github.event_name == 'schedule' }}
+    permissions:
+      contents: write
+    concurrency:
+      group: daily-motivation-delivery
+      cancel-in-progress: false
+      queue: single
+    steps:
+      - name: Checkout current default branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Confirm manual live send
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        env:
+          CONFIRMATION: ${{ inputs.confirmation }}
+        run: scripts/confirm_live_send.sh
+
+      - name: Send today's email
+        id: send
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: python daily_motivation.py
 
-      - name: Commit archive back to repo
+      - name: Commit archive back to main
+        if: ${{ steps.send.outcome == 'success' }}
         run: |
           git config user.name "Daily Motivation Bot"
           git config user.email "actions@github.com"
-          git add archive/
-          if ! git diff --cached --quiet; then
-            git commit -m "Archive: daily email for $(TZ='America/New_York' date +%Y-%m-%d)"
-            git push
-          else
+          git add -- archive/
+
+          if git diff --cached --quiet; then
             echo "No new archive file to commit."
+            exit 0
           fi
+
+          git commit -m "Archive: daily email for $(TZ='America/New_York' date +%Y-%m-%d)"
+
+          for attempt in 1 2 3; do
+            echo "Archive push attempt $attempt of 3"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Could not rebase the archive commit onto current main."
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+
+          echo "::error::Could not push the archive commit after 3 attempts."
+          exit 1

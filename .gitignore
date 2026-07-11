@@ -13,5 +13,5 @@ venv/
 
 # Source corpus is kept local only.
 # Contains transcripts of third-party YouTube videos that should not be republished.
-# Kept on local Mac at data/sources.json for queue refresh.
+# Kept on the local Mac for private content curation.
 data/sources.json

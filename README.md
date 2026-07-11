@@ -10,7 +10,7 @@ So I built a system that does it for me.
 
 ## What arrives each morning
 
-A short email lands in my inbox at 8:05 AM. It carries a theme tied to the day of the week (Monday discipline, Friday outwork, etc.) and contains:
+A short email lands in my inbox around 8 AM. It carries a theme tied to the day of the week (Monday discipline, Friday outwork, etc.) and contains:
 
 - **A hook quote** from a motivational speech in my collection
 - **Two follow-on quotes** under "the method" and "the mindset" sections
@@ -22,30 +22,67 @@ The design changes between weekdays (a serif "letter" style) and weekends (a sof
 ## How it works
 
 ```
-Step 1   Curate motivational speeches as a YouTube playlist, then
-         import it into Google NotebookLM for transcript extraction.
+Step 1   Keep 56 curated weekday-specific content records in a
+         versioned content bank.
 
-Step 2   Use Claude Code to compose 30 days of email framing in
-         advance, written in a specific voice.
+Step 2   Deterministically combine a hook, method, mindset, and action
+         block for today's weekday.
 
-Step 3   GitHub Actions runs daily at 8:05 AM, picks today's email
-         from the saved batch, and sends it via Gmail.
+Step 3   GitHub Actions retries through the morning. The first eligible
+         run sends through Gmail and commits the archive to main.
+
+Step 4   A read-only afternoon audit reports one failure if no valid
+         archive was committed.
 ```
 
-Notably, no AI runs at delivery time. The 30 daily emails are composed in advance, and the morning job just picks the right one and sends. The system runs in about 10 seconds per day at zero cost.
+No AI runs at delivery time, no API key is required, and there is no queue to refresh. The content traversal is stable and versioned: individual blocks recur every 7-9 weeks, while complete four-block combinations take roughly 46-126 years to repeat, depending on the weekday pool size.
 
 ## Tech stack
 
-Built with Python's standard library and GitHub Actions for the daily cron. The source corpus comes from Google NotebookLM, and monthly content batches use Claude. Delivery is via Gmail. The whole thing runs with no web framework or database.
+Built with Python's standard library, GitHub Actions, and Gmail SMTP. The source corpus remains local and ignored; only the curated content bank is published. There is no web framework, database, paid runtime API, or third-party Python dependency.
 
 ## Setup
 
 1. Fork or clone this repo.
 2. Generate a Gmail app password at https://myaccount.google.com/apppasswords.
 3. Add two GitHub Secrets: `GMAIL_USER` and `GMAIL_APP_PASSWORD`.
-4. Trigger once to verify: `gh workflow run daily.yml`.
+4. Run a safe preview:
 
-The workflow fires every 15 minutes from 9:30 to 12:30 UTC. The Python script exits silently if it is before 7:30 AM ET or if today's email is already in the archive, so only the first run that meets both conditions actually sends. This absorbs GitHub Actions cron drift and handles DST without seasonal edits.
+   ```bash
+   gh workflow run daily.yml -f mode=preview -f force_date=2026-07-12
+   ```
+
+Manual runs default to preview. A live recovery run always uses the actual ET date, keeps the time and archive guards enabled, and requires explicit confirmation:
+
+```bash
+gh workflow run daily.yml -f mode=live -f confirmation='SEND TODAY'
+```
+
+## Scheduling and failure alerts
+
+The delivery workflow creates 21 opportunities between 3:30 and 8:30 AM in `America/New_York`. Runs before 7:30 AM exit successfully, and runs after a successful archive commit see that archive and skip. Delivery jobs always check out the current tip of `main`, so a queued retry cannot use a stale pre-archive snapshot.
+
+Scheduled delivery failures are allowed to retry without producing a separate GitHub failure email each time. At 2:17 PM ET, `Daily Motivation Delivery Audit` checks for exactly one non-empty, structurally valid archive for the day. If all delivery attempts failed, that audit is the single authoritative workflow failure.
+
+## Local verification
+
+```bash
+# Preview any date without credentials, SMTP, or archive writes
+python3 daily_motivation.py --dry-run --force-date 2026-07-12
+
+# Verify today's committed archive, or force a date for testing
+python3 daily_motivation.py --verify-delivery
+python3 daily_motivation.py --verify-delivery --force-date 2026-07-12
+
+# Run the complete standard-library test suite
+python3 -m unittest discover -s tests -v
+```
+
+`--force-date` is intentionally rejected for live delivery, and the former `--skip-guards` escape hatch has been removed.
+
+## Content bank maintenance
+
+`data/content_bank.json` is versioned and its record order is protected by a digest in `evergreen_content.py`. Reordering records changes the date-to-content mapping, so any future bank revision must deliberately bump the content-bank version and update its digest. The local `data/sources.json` transcript corpus stays ignored and must never be committed.
 
 ## Roadmap
 
